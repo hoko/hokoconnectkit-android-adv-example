@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">DummyApp</string>
+
+    <string name="hoko_token"># Your HOKO advertiser token here. #</string>
+</resources>
