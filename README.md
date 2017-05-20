@@ -1,6 +1,10 @@
-# hokoconnectkit-android-adv-example
+# hokoconnectkit Android 1.0.x example app
 
-Example of an advertiser app using hokoconnectkit v1.0.18.
+Example of a partner app using deprecated **hokoconnectkit** Android SDK v1.0.18.
+
+[Documentation](http://yourdocs.hoko.io/advertiser/android/getting_started.html)
+
+Do not forget to replace the `HOKOToken` string with the appropriate token from your dashboard.
 
 ### Manually test the publisher opening an advertiser deep link
 
@@ -10,4 +14,4 @@ Example of an advertiser app using hokoconnectkit v1.0.18.
 
 `adb shell am broadcast -a com.android.vending.INSTALL_REFERRER -n io.hoko.dummyapp/hoko.io.hokoconnectkit.receiver.InstallBroadcastReceiver --es "referrer" ":hk_dp=dummy-app%3A%2F%2F:hk_code=test"`
 
-Where `hk_code` is an attribution token from HOKO. Token value `test` is always accepted and ignored.
+Where `hk_code` is an attribution code from HOKO. Code value `test` is always accepted and ignored.
