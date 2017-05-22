@@ -15,11 +15,9 @@ public class DeepActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_deep);
 
-        HokoConnectKit.setup(this);
-        HokoConnectKit.setVerbose(true);
-
         try {
             HokoConnectKit.setup(this);
+            HokoConnectKit.setVerbose(true);
 
             Intent intent = getIntent();
             if (intent == null) {
