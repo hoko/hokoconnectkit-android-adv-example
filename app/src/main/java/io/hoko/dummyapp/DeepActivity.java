@@ -16,6 +16,10 @@ public class DeepActivity extends AppCompatActivity {
         setContentView(R.layout.activity_deep);
 
         try {
+            // May not be necessary, in which case it logs a harmless error message.
+            HokoConnectKit.setup(this);
+            HokoConnectKit.setVerbose(true);
+            
             Intent intent = getIntent();
             if (intent == null) {
                 HokoLogger.d("No intent");
